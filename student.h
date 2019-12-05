@@ -1,5 +1,6 @@
 #ifndef _STUDENT_H_
 #define _STUDENT_H_
+#include <string>
 
 using std::string;
 
@@ -9,6 +10,7 @@ class student
     string firstName;
     string lastName;
     public:
-    void setname(&string, &string);
-    string fullName(string, string);
+    void setName(string &first, string &last);
+    string fullName();
 };
+#endif
